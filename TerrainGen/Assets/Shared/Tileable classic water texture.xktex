@@ -1,0 +1,7 @@
+!Texture
+Id: 611a2f0c-b335-43ec-ba37-093ef76408f0
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: Tileable classic water texture.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

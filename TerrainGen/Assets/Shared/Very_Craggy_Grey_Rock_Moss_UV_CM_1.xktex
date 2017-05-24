@@ -1,0 +1,7 @@
+!Texture
+Id: c410a70e-a1f5-4094-9186-44b5941e8af2
+SerializedVersion: {Xenko: 2.0.0.0}
+Tags: []
+Source: Very_Craggy_Grey_Rock_Moss_UV_CM_1.jpg
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

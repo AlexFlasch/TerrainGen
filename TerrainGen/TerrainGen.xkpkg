@@ -1,0 +1,50 @@
+!Package
+Id: f369ffef-87d6-4cda-93b0-ef07f0d63b36
+SerializedVersion: {Assets: 0.0.4}
+Meta:
+    Name: TerrainGen
+    Version: 1.0.0.0
+    Authors: []
+    Owners: []
+    RootNamespace: TerrainGen
+    Dependencies:
+        -   Name: Xenko
+            Version: 2.0.1.1
+            RootAssets: []
+LocalDependencies: []
+Profiles:
+    -   Name: Shared
+        Platform: Shared
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Shared
+            -   Path: TerrainGen.Game/Effects
+        OutputGroupDirectories: {}
+        ProjectReferences:
+            -   Id: 17c140db-0437-4942-949b-298f91c6ddad
+                Location: TerrainGen.Game/TerrainGen.Game.csproj
+                Type: Library
+    -   Name: Windows
+        Platform: Windows
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Windows
+        OutputGroupDirectories: {}
+        ProjectReferences:
+            -   Id: 8c993878-ae83-44d1-a940-2bba1f2a08fd
+                Location: TerrainGen.Windows/TerrainGen.Windows.csproj
+                Type: Executable
+    -   Name: Linux
+        Platform: Linux
+        InheritProfiles: []
+        AssetFolders:
+            -   Path: Assets/Linux
+        OutputGroupDirectories: {}
+        ProjectReferences:
+            -   Id: 12af2859-40a7-445d-b4cc-b02b8cb64fc7
+                Location: TerrainGen.Linux/TerrainGen.Linux.csproj
+                Type: Executable
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets: []
