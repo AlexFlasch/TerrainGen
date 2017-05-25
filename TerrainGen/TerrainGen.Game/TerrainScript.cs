@@ -501,16 +501,16 @@ namespace SimpleTerrain
             {
                 await Script.NextFrame();
 
-                if (Input.PointerEvents.Count > 0)
-                {
-                    var sumDelta = MathUtil.Pi * Input.PointerEvents.Aggregate(Vector2.Zero, (current, pointerEvent) => current + pointerEvent.DeltaPosition);
-                    rotY += 1.5f * sumDelta.X;
-                    rotX += 0.75f * sumDelta.Y;
-                }
+                //if (Input.PointerEvents.Count > 0)
+                //{
+                //    var sumDelta = MathUtil.Pi * Input.PointerEvents.Aggregate(Vector2.Zero, (current, pointerEvent) => current + pointerEvent.DeltaPosition);
+                //    rotY += 1.5f * sumDelta.X;
+                //    rotX += 0.75f * sumDelta.Y;
+                //}
                 // Rotate the terrain
                 rotY += 0.25f * (float)Game.UpdateTime.Elapsed.TotalSeconds;
 
-                Entity.Transform.Rotation = Quaternion.RotationY(rotY) * Quaternion.RotationX(rotX); // rotate the whole world
+                Entity.Transform.Rotation = Quaternion.RotationY(rotY); // rotate the whole world
             }
         }
 
@@ -533,7 +533,7 @@ namespace SimpleTerrain
                 });
 
                 InitializeBuffersFromTerrain(heightMap);
-                TerrainEntity.Transform.Position = new Vector3(0, -heightMap.MedianHeight, 0);
+                TerrainEntity.Transform.Position = new Vector3(0, -heightMap.MedianHeight * 2, 0);
 
                 // Dismiss loading modal and text
                 loadingModal.Visibility = Visibility.Collapsed;

@@ -9,26 +9,10 @@ Hierarchy:
         - 23e4e47b-dece-4634-ab21-fb71274a6f86
         - f5a922ef-1c71-483e-a662-622e1969f147
         - af8f84d1-4014-4e21-969b-5165fe3d4965
-        - 8ffd75cf-5e77-420c-9d8e-fbe4794867ed
-        - 162ef9bf-aa7d-43bc-b8cb-88a79466172e
         - f88af189-6ecf-4fb6-a1cb-00046f4cd57f
         - 7d11892d-e370-43b2-a83f-b7b0e33a8e39
         - 83b63634-8524-4134-b3eb-ea7f21bad9ff
     Parts:
-        -   Entity:
-                Id: 162ef9bf-aa7d-43bc-b8cb-88a79466172e
-                Name: Sphere
-                Components:
-                    7bd0833f25642eadf01a1294b8bd6437: !TransformComponent
-                        Id: d7d1d02e-eb88-46d6-a5e5-2e31fb52474f
-                        Position: {X: 0.0, Y: 0.5, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    f11a1d8ca06978d0691eb1d81d35e03b: !ModelComponent
-                        Id: c82c3a09-9009-445e-92e4-f82017fca714
-                        Model: 38d976b4-3976-4bd4-af8c-5f4aea7b6d23:Sphere
-                        Materials: {}
         -   Entity:
                 Id: 23e4e47b-dece-4634-ab21-fb71274a6f86
                 Name: Camera
@@ -92,20 +76,6 @@ Hierarchy:
                         Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
                         Size: {X: 1.0, Y: 1.0, Z: 1.0}
         -   Entity:
-                Id: 8ffd75cf-5e77-420c-9d8e-fbe4794867ed
-                Name: Ground
-                Components:
-                    16ad50d101a5cdb17c14d7b2dfa201d6: !TransformComponent
-                        Id: 6af636b3-396d-4874-9f6c-6921761736b4
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-                    c577989c024b922f21d96675eff3c542: !ModelComponent
-                        Id: 7033e691-d93a-4830-83e9-67dc17073e2d
-                        Model: 86036cce-7ef7-4bea-a319-b9c86430093d:Ground
-                        Materials: {}
-        -   Entity:
                 Id: af8f84d1-4014-4e21-969b-5165fe3d4965
                 Name: Skybox
                 Components:
@@ -152,7 +122,7 @@ Hierarchy:
                 Components:
                     ea5b0d732a09e21ecc06763a490c38ed: !TransformComponent
                         Id: e994d77f-ae08-498d-8c14-1cec27e90df6
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Position: {X: 0.0, Y: -100.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
